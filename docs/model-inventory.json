@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-11-09T19:59:52Z",
+  "host": "Linux",
+  "arch": "x86_64",
+  "evidence_class": "VERIFIED (cloud host only; Mac models UNKNOWN)",
+  "candidates": [
+    {
+      "id": "diffusionbee",
+      "path": "/home/ubuntu/Applications/DiffusionBee.app",
+      "present": false
+    },
+    {
+      "id": "draw-things",
+      "path": "/home/ubuntu/Applications/Draw Things.app",
+      "present": false
+    },
+    {
+      "id": "automatic1111",
+      "path": "/home/ubuntu/stable-diffusion-webui",
+      "present": false
+    },
+    {
+      "id": "comfyui",
+      "path": "/home/ubuntu/ComfyUI",
+      "present": false
+    },
+    {
+      "id": "mlx",
+      "path": "/home/ubuntu/mlx-examples",
+      "present": false
+    },
+    {
+      "id": "coreml-models",
+      "path": "/home/ubuntu/Models",
+      "present": false
+    },
+    {
+      "id": "ollama",
+      "path": "/usr/local/bin/ollama",
+      "present": false
+    },
+    {
+      "id": "ollama-homebrew",
+      "path": "/opt/homebrew/bin/ollama",
+      "present": false
+    },
+    {
+      "id": "ffmpeg",
+      "path": "/usr/local/bin/ffmpeg",
+      "present": false
+    },
+    {
+      "id": "ffmpeg-homebrew",
+      "path": "/opt/homebrew/bin/ffmpeg",
+      "present": false
+    },
+    {
+      "id": "ffmpeg-path",
+      "path": "/usr/bin/ffmpeg",
+      "present": true
+    }
+  ],
+  "fonts_note": "UNKNOWN",
+  "coreml_note": "UNKNOWN"
+}
