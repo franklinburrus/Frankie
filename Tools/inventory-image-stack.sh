@@ -55,12 +55,22 @@ if [[ "$HOST" == "Darwin" ]]; then
   if [[ -d /Library/Fonts || -d "$HOME_DIR/Library/Fonts" ]]; then
     fonts_note="System/user font directories present (individual licence check still required)"
   fi
-  coreml_count="$(find "$HOME_DIR/Library/Application Support" "$HOME_DIR/Models" /opt 2>/dev/null \( -name '*.mlmodelc' -o -name '*.mlpackage' \) 2>/dev/null | head -n 20 | wc -l | tr -d ' ')"
+  scan_roots=()
+  [[ -d "$HOME_DIR/Library/Application Support" ]] && scan_roots+=("$HOME_DIR/Library/Application Support")
+  [[ -d "$HOME_DIR/Models" ]] && scan_roots+=("$HOME_DIR/Models")
+  [[ -d /opt ]] && scan_roots+=("/opt")
+  if [[ ${#scan_roots[@]} -gt 0 ]]; then
+    coreml_count="$(find "${scan_roots[@]}" \( -name '*.mlmodelc' -o -name '*.mlpackage' \) 2>/dev/null | head -n 20 | wc -l | tr -d ' ' || true)"
+  else
+    coreml_count=0
+  fi
   coreml_note="Sample scan hit count (bounded): ${coreml_count}"
 fi
 
 evidence="REPORTED"
-if [[ "$HOST" != "Darwin" ]]; then
+if [[ "$HOST" == "Darwin" ]]; then
+  evidence="VERIFIED"
+elif [[ "$HOST" != "Darwin" ]]; then
   evidence="VERIFIED (cloud host only; Mac models UNKNOWN)"
 fi
 
@@ -94,7 +104,11 @@ PY
   echo
   echo "- Fonts: ${fonts_note}"
   echo "- Core ML scan: ${coreml_note}"
-  echo "- Mac-installed generative image models remain **UNKNOWN** until this script is run on Frank's Mac."
+  if [[ "$HOST" == "Darwin" ]]; then
+    echo "- Candidate scan completed on Frank's Mac. Present tools are listed above; absent generative runners mean Phase 1 continues on composite fallback unless Frank approves an install (D09)."
+  else
+    echo "- Mac-installed generative image models remain **UNKNOWN** until this script is run on Frank's Mac."
+  fi
   echo "- No installs performed (D09)."
   echo
   echo "Machine-readable: \`${OUT_JSON}\`"

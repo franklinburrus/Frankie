@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-11-09T19:59:52Z",
-  "host": "Linux",
-  "arch": "x86_64",
-  "evidence_class": "VERIFIED (cloud host only; Mac models UNKNOWN)",
+  "generated_at": "2026-11-09T22:31:36Z",
+  "host": "Darwin",
+  "arch": "arm64",
+  "evidence_class": "VERIFIED",
   "candidates": [
     {
       "id": "diffusionbee",
-      "path": "/home/ubuntu/Applications/DiffusionBee.app",
+      "path": "/Users/frank/Applications/DiffusionBee.app",
       "present": false
     },
     {
       "id": "draw-things",
-      "path": "/home/ubuntu/Applications/Draw Things.app",
+      "path": "/Users/frank/Applications/Draw Things.app",
       "present": false
     },
     {
       "id": "automatic1111",
-      "path": "/home/ubuntu/stable-diffusion-webui",
+      "path": "/Users/frank/stable-diffusion-webui",
       "present": false
     },
     {
       "id": "comfyui",
-      "path": "/home/ubuntu/ComfyUI",
+      "path": "/Users/frank/ComfyUI",
       "present": false
     },
     {
       "id": "mlx",
-      "path": "/home/ubuntu/mlx-examples",
+      "path": "/Users/frank/mlx-examples",
       "present": false
     },
     {
       "id": "coreml-models",
-      "path": "/home/ubuntu/Models",
+      "path": "/Users/frank/Models",
       "present": false
     },
     {
@@ -52,14 +52,14 @@
     {
       "id": "ffmpeg-homebrew",
       "path": "/opt/homebrew/bin/ffmpeg",
-      "present": false
+      "present": true
     },
     {
       "id": "ffmpeg-path",
-      "path": "/usr/bin/ffmpeg",
+      "path": "/opt/homebrew/bin/ffmpeg",
       "present": true
     }
   ],
-  "fonts_note": "UNKNOWN",
-  "coreml_note": "UNKNOWN"
+  "fonts_note": "System/user font directories present (individual licence check still required)",
+  "coreml_note": "Sample scan hit count (bounded): 0"
 }

@@ -1,12 +1,12 @@
 # Frankie baseline evidence
 
 - Evidence class: `VERIFIED`
-- Generated at: 2026-11-09T20:00:08Z
-- Host: Linux x86_64
-- Repo root: `/agent/repos/Frankie`
-- Origin: `https://github.com/franklinburrus/Frankie`
+- Generated at: 2026-11-09T22:30:47Z
+- Host: Darwin arm64
+- Repo root: `/Users/frank/Documents/Frankie App`
+- Origin: `https://github.com/franklinburrus/Frankie.git`
 - Branch: `cursor/phase1-thumbnail-mvp-0525`
-- HEAD: `615244086b3ca986df829a12d864912202d4e756`
+- HEAD: `3bf544b2b26e807abb9e80f10085f0bbadb95be8`
 
 ## Origin check
 - Origin matches Frankie: YES
@@ -28,9 +28,10 @@
 - Application-related paths present: 18
 
 ```
+Frankie.xcodeproj/project.pbxproj
 Frankie/App/ContentView.swift
-Frankie/App/FrankieApp.swift
 Frankie/App/Frankie.entitlements
+Frankie/App/FrankieApp.swift
 Frankie/App/ThumbnailJobViewModel.swift
 Frankie/Core/CaptionOverlay.swift
 Frankie/Core/DeterministicCompositeGenerator.swift
@@ -42,7 +43,6 @@ Frankie/Core/LocalImageGenerating.swift
 Frankie/Core/Models.swift
 Frankie/Core/PNGCodec.swift
 Frankie/Core/ThumbnailPipeline.swift
-Frankie.xcodeproj/project.pbxproj
 Package.swift
 Tests/FrankieCoreTests/FrankieCoreTests.swift
 Tools/FrankieCLI/main.swift

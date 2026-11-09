@@ -19,13 +19,12 @@ Primary abstraction: pluggable `LocalImageGenerating` (`Frankie/Core/LocalImageG
 | Environment | Status |
 |---|---|
 | Linux cloud VM | Best-effort inventory run; no Mac generative stack visible → see `MODEL_INVENTORY.md` |
-| Frank’s Mac | **UNKNOWN** until `Tools/inventory-image-stack.sh` runs there |
+| Frank’s Mac | **VERIFIED 2026-11-09** — no generative image runner; only Homebrew ffmpeg + unrelated Diffusion Studio video editor. See `MODEL_INVENTORY.md`. |
 
-## Install proposal (D09)
+## Locked runtime decision (post-Mac inventory)
 
-**PROPOSED only if Mac inventory finds no suitable local runner:**
-
-- Smallest candidate class: already-licensed local CLI that can accept reference images and emit a still, **or** continue with composite path honestly labelled non-AI until Frank picks a model.
-- Do **not** download weights or install packages until Frank approves.
+- **Active Phase 1 path:** `DeterministicCompositeGenerator` (composite fallback).
+- **AI image-generation claim:** **false** / do not label composite as AI.
+- **Install proposal (D09):** remains **PROPOSED only** — Mac inventory found no suitable local runner. Do **not** download weights or install packages until Frank approves a specific candidate.
 
 Current code default: composite fallback with `NEEDS_REVIEW`. No silent installs.
