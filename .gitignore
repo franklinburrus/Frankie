@@ -1,0 +1,31 @@
+# Xcode / Swift
+.DerivedData/
+DerivedData/
+.build/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+xcuserdata/
+*.xcuserstate
+.swiftpm/
+
+# OS / editors
+.DS_Store
+*~
+.idea/
+.vscode/
+
+# Local secrets / authorized media (never commit)
+Fixtures/authorized/
+*.pem
+*.p12
+.env
+.env.*
+
+# Generated evidence outputs (keep templates in docs/)
+artifacts/
+/tmp-frankie-*/
+
+# Python
+__pycache__/
+*.pyc
+.venv/

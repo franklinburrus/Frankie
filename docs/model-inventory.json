@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-11-09T22:31:36Z",
+  "host": "Darwin",
+  "arch": "arm64",
+  "evidence_class": "VERIFIED",
+  "candidates": [
+    {
+      "id": "diffusionbee",
+      "path": "/Users/frank/Applications/DiffusionBee.app",
+      "present": false
+    },
+    {
+      "id": "draw-things",
+      "path": "/Users/frank/Applications/Draw Things.app",
+      "present": false
+    },
+    {
+      "id": "automatic1111",
+      "path": "/Users/frank/stable-diffusion-webui",
+      "present": false
+    },
+    {
+      "id": "comfyui",
+      "path": "/Users/frank/ComfyUI",
+      "present": false
+    },
+    {
+      "id": "mlx",
+      "path": "/Users/frank/mlx-examples",
+      "present": false
+    },
+    {
+      "id": "coreml-models",
+      "path": "/Users/frank/Models",
+      "present": false
+    },
+    {
+      "id": "ollama",
+      "path": "/usr/local/bin/ollama",
+      "present": false
+    },
+    {
+      "id": "ollama-homebrew",
+      "path": "/opt/homebrew/bin/ollama",
+      "present": false
+    },
+    {
+      "id": "ffmpeg",
+      "path": "/usr/local/bin/ffmpeg",
+      "present": false
+    },
+    {
+      "id": "ffmpeg-homebrew",
+      "path": "/opt/homebrew/bin/ffmpeg",
+      "present": true
+    },
+    {
+      "id": "ffmpeg-path",
+      "path": "/opt/homebrew/bin/ffmpeg",
+      "present": true
+    }
+  ],
+  "fonts_note": "System/user font directories present (individual licence check still required)",
+  "coreml_note": "Sample scan hit count (bounded): 0"
+}
