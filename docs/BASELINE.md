@@ -1,12 +1,12 @@
 # Frankie baseline evidence
 
 - Evidence class: `VERIFIED`
-- Generated at: 2026-11-09T20:00:03Z
+- Generated at: 2026-11-09T20:00:08Z
 - Host: Linux x86_64
 - Repo root: `/agent/repos/Frankie`
 - Origin: `https://github.com/franklinburrus/Frankie`
 - Branch: `cursor/phase1-thumbnail-mvp-0525`
-- HEAD: `32c9161ddfac6e34c299aa412a889a6494dcf2f6`
+- HEAD: `615244086b3ca986df829a12d864912202d4e756`
 
 ## Origin check
 - Origin matches Frankie: YES
